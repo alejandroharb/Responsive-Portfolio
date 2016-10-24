@@ -1,0 +1,408 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-image: url("../images/concrete_seamless.png");
+	background-position: center center;
+	background-repeat: repeat;
+}
+
+header {
+	background-color:#ffffff;
+	border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	padding-top: 15px;
+	padding-bottom:15px;
+	top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:#4aaaa6;
+}
+
+p {
+	color:#777777;
+}
+
+h1 {
+	font-family:'Georgia', Times, Times New Roman, serif;
+}
+
+p {
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+	float:left;
+	padding:15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.container {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:140px;
+	display: block;
+}
+
+.nav-bar {
+	width: 100%;
+	display: inline-block;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.brand-title {
+	float:left;
+	background-color: #4aaaa6;
+	margin-bottom: -17px;
+	padding-top:10px;
+    padding-bottom: 6px;
+	margin-left: 100px;
+	font-size:46px;
+	border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.brand-title h1{
+	margin-right: 15px;
+    margin-left: 15px;
+    color: #ffffff;
+}
+.nav-links{
+	float: right;
+	position:relative;
+	margin-right: 100px;
+}
+.nav-links a{
+	color:#777777;
+	text-decoration: none;
+	padding:27px 10px;
+	font-size: 20px;
+	border-radius:6px;
+}
+
+.nav-links a:hover{
+	background-color:#4aaaa6;
+	color:#fff;
+}
+
+.nav-list li{
+	position: relative;
+	display: inline-block;
+	margin:15px 15px 0px 0px;
+	font-size: 16px;
+}
+
+.container h1{
+	font-size:30px;
+}
+
+.container h3{
+	font-size:24px;
+}
+
+.main-content {
+	width:100%;
+	padding:10px;
+	margin-bottom: 100px;
+	float: left;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	border-style: solid;
+
+}
+
+.main-content img {
+	float: left;
+	margin:25px 15px 15px 15px;
+	width: 200px;
+	border-radius: 6px;
+}
+
+.main-content p{
+	margin:20px;
+    font-size: 17px;
+    line-height: 150%;
+	text-align:justify;
+}
+
+.sidebar {
+	display: block;
+	float: left;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	border-style: solid;
+}
+
+.sidebar .content {
+	padding: 10px;
+}
+
+.sidebar h3{
+	text-align: center;
+}
+
+.contact-links li{
+	display: initial;
+}
+
+.contact-links li img{
+	width:30%;
+}
+
+.main-content .zoom:hover {
+  width:210px;
+  transition-duration: .5s;
+}
+
+.rotate:hover  {
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+#footer {
+	width:100%;
+	height: 50px;
+	bottom:0;
+	left: 0;
+	background-color:#666666;
+	border-top-style: solid;
+	border-top-color: #4aaaa6;
+    border-top-width: 5px;
+	position:relative;
+	clear:both;
+}
+.copyright {
+	text-align: center;
+	padding-top: 10px;
+}
+
+/* Begin Styles only for Portfolio page */
+
+.portfolio-content li {
+	display: block;
+}
+
+.portfolio-content img {
+	display: block;
+	margin:15px 35px;
+}
+
+.portfolio-content img:hover {
+	box-shadow:0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Begin Styles only for Contact-Me page */
+
+
+}
+form {
+	padding:5px;
+}
+input {
+	font-size:16px;
+	color:#777777;
+	border: 1px solid #bdbdbd;
+	border-radius:4px;
+	width:95%;
+	display: block;
+}
+
+input: focus, input:hover {
+	background-color:#ffffff;
+	border: 1px solid #b1e1e4;
+}
+
+input#submit{
+	background-color: #4aaaa6;
+	color: #ffffff;
+	border-bottom:2px solid #b2b2b2;
+	text-shadow: 0px 1px 1px #000000;
+	width: 140px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+input#submit:hover{
+	color:#333333;
+	border: 1px solid #a4a4a4;
+	border-top:2px solid #b2b2b2;
+	background-color:#a0dbc4;
+	cursor:pointer;
+}
+
+textarea {
+	width: 95%;
+	height: 150px;
+}
+
+/* About Me responsive */
+@media screen and (max-width: 980px){
+	.brand-title {
+		float: left;
+	    background-color: #4aaaa6;
+	    margin-bottom: -17px;
+	    margin-left:0;
+	    padding-top: 10px;
+	    padding-bottom: 6px;
+	    font-size: 36px;
+	    border-top-left-radius: 6px;
+	    border-top-right-radius: 6px;
+	}
+	.nav-links {
+		margin-right: 0px;
+	}
+	.nav-links a{
+		padding: 17px 10px;
+	}
+	.container {
+		margin-top: 90px;
+		max-width: 675px;
+	}
+	.main-content img {
+		width: 400px;
+    	clear: both;
+    	float: none;
+    	margin: 10px auto;
+    	display: block;
+	}
+}
+@media screen and (max-width: 768px){
+	.brand-title {
+		float: left;
+	    background-color: #4aaaa6;
+	    margin-bottom: -17px;
+	    margin-left:0;
+	    padding-top: 10px;
+	    padding-bottom: 6px;
+	    font-size: 36px;
+	    border-top-left-radius: 6px;
+	    border-top-right-radius: 6px;
+	}
+	.nav-links {
+		margin-right: 0px;
+	}
+	.nav-links a{
+		padding: 17px 10px;
+	}
+	.container {
+		margin-top: 90px;
+		max-width: 750px;
+	}
+	.col-8 {
+		width:100%;
+		clear: both;
+	}
+	.main-content {
+		margin-bottom:0;
+	}
+	.main-content p{
+		font-size: 24px;
+	}
+	.main-content img {
+		width: 300px;
+    	float: left;
+    	margin: 10px 30px 10px 15px;
+	}
+	.main-content .zoom:hover {
+    width: initial;
+    transition-duration: none;
+}
+	.col-4{
+		width:100%;
+	}
+	.sidebar h3{
+		text-align: left;
+	}
+	.contact-links li img {
+    width: 10%;
+	}
+}
+@media screen and (max-width: 640px){
+	.brand-title {
+		text-align: center;
+		float:none;
+		clear: both;
+		background-color: #4aaaa6;
+		margin-bottom: 0px;
+		padding-top:10px;
+	    padding-bottom: 0px;
+		margin-left: 0px;
+		font-size:40px;
+		border-top-left-radius: 0px;
+	    border-top-right-radius: 0px;
+	}
+	.nav-links {
+		margin-top:15px;
+		margin-right: 0px;
+		float:none;
+		text-align: center;
+	}
+	.nav-links a{
+		padding: 17px 10px;
+	}
+	.container {
+		margin-top: 130px;
+		max-width: 600px;
+	}
+	.col-8 {
+		width:100%;
+		clear: both;
+	}
+	.main-content {
+		margin-bottom:0;
+	}
+	.main-content p{
+		font-size: 24px;
+	}
+	.main-content img {
+		width: 300px;
+    	float: none;
+    	margin: 10px auto;
+	}
+	.main-content .zoom:hover {
+    width: initial;
+    transition-duration: none;
+}
+	.col-4{
+		width:100%;
+	}
+	.sidebar h3{
+		text-align: left;
+	}
+	.contact-links li img {
+    width: 10%;
+	}
+}
