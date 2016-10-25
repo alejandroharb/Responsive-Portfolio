@@ -193,6 +193,8 @@ p {
 }
 
 #footer {
+	text-align: center;
+	padding-top:10px;
 	width:100%;
 	height: 50px;
 	bottom:0;
@@ -204,6 +206,21 @@ p {
 	position:relative;
 	clear:both;
 }
+#footer-contact{
+	text-align: center;
+	position:relative;
+	width:100%;
+	height: 50px;
+	bottom:0;
+	left: 0;
+	background-color:#666666;
+	border-top-style: solid;
+	border-top-color: #4aaaa6;
+    border-top-width: 5px;
+    padding-top:10px;
+	clear:both;
+		}
+}
 .copyright {
 	text-align: center;
 	padding-top: 10px;
@@ -212,12 +229,14 @@ p {
 /* Begin Styles only for Portfolio page */
 
 .portfolio-content li {
-	display: block;
+	display: inline-block;
+	position: relative;
+	margin:0 auto;
 }
 
 .portfolio-content img {
 	display: block;
-	margin:15px 35px;
+	margin:15px 40px;
 }
 
 .portfolio-content img:hover {
@@ -264,8 +283,14 @@ input#submit:hover{
 }
 
 textarea {
-	width: 95%;
+	font-size:16px;
+	color:#777777;
+	border: 1px solid #bdbdbd;
+	border-radius:4px;
+	width:95%;
+	display: block;
 	height: 150px;
+	margin-bottom: 10px;
 }
 
 /* responsive */
@@ -298,9 +323,23 @@ textarea {
     	margin: 10px auto;
     	display: block;
 	}
+	#footer-contact{
+		position:absolute;
+		width:100%;
+		height: 50px;
+		bottom:0;
+		left: 0;
+		background-color:#666666;
+		border-top-style: solid;
+		border-top-color: #4aaaa6;
+	    border-top-width: 5px;
+		clear:both;
+		}
 	/*Portfolio Page*/
 	.portfolio-content li {
-	display: block;
+	display: inline-block;
+	position: relative;
+	margin:0 auto;
 	}
 
 	.portfolio-content img {
@@ -354,6 +393,9 @@ textarea {
 	}
 }
 @media (min-width: 640px) and (max-width: 768px){
+	header {
+		position:static;
+	}
 	.brand-title {
 		float: left;
 	    background-color: #4aaaa6;
@@ -372,8 +414,8 @@ textarea {
 		padding: 17px 10px;
 	}
 	.container {
-		margin-top: 90px;
-		max-width: 750px;
+		margin-top: 0;
+		max-width: 700px;
 	}
 	.col-8 {
 		width:100%;
@@ -403,15 +445,29 @@ textarea {
 	.contact-links li img {
     width: 10%;
 	}
+	#footer-contact{
+		position:absolute;
+		width:100%;
+		height: 50px;
+		bottom:0;
+		left: 0;
+		background-color:#666666;
+		border-top-style: solid;
+		border-top-color: #4aaaa6;
+	    border-top-width: 5px;
+		clear:both;
+	}
 /*Portfolio Page*/
 	.portfolio-content li {
 	display: inline-block;
+	position: relative;
+	margin:0 auto;
 	}
 
 	.portfolio-content img {
 		display: block;
-		margin:20px 10px;
-		width:250px;
+		margin: 15px 32px;
+    	width: 250px;
 	}
 
 	.portfolio-content img:hover {
@@ -451,7 +507,7 @@ textarea {
 	}
 	.container {
 		margin-top:0px;
-		max-width: 600px;
+		max-width: 100%;
 	}
 	.col-8 {
 		width:100%;
@@ -466,13 +522,13 @@ textarea {
 		margin:10px;
 	}
 	.main-content img {
-		width: 200px;
+		width: 100%;
     	float: none;
     	margin: 10px auto;
 	}
 	.main-content img.zoom:hover {
-    width: 210px;
-    transition-duration: 0.5s;
+    width: 100%;
+    transition-duration: none;
 	}
 	.col-4{
 		width:100%;
@@ -493,22 +549,59 @@ textarea {
 	.portfolio-content img {
 		display: block;
 		margin:20px auto;
-		width:520px;
+		width:100%;
 	}
 
 	.portfolio-content img:hover {
 		box-shadow:0 15px 20px rgba(0, 0, 0, 0.3);
 	}
+	#footer-contact{
+	text-align: center;
+	position:relative;
+	width:100%;
+	height: 50px;
+	bottom:0;
+	left: 0;
+	background-color:#666666;
+	border-top-style: solid;
+	border-top-color: #4aaaa6;
+    border-top-width: 5px;
+    padding-top:10px;
+	clear:both;
+		}
 }
 @media screen and (max-width: 320px){
+	.main-content img {
+	width: 100%;
+	float: none;
+	margin: 10px auto;
+	}
+	.main-content img.zoom:hover {
+    width: 100%;
+    transition-duration: none;
+	}
 	.portfolio-content li {
 	    display: block;
 	    position: relative;
-	    margin: 0 auto;
+	    margin: 0 15%;
 	}
 	.portfolio-content img {
 		display: block;
 		margin:20px auto;
-		width:250px;
+		width:100%;
 	}
+	#footer-contact{
+	text-align: center;
+	position:relative;
+	width:100%;
+	height: 50px;
+	bottom:0;
+	left: 0;
+	background-color:#666666;
+	border-top-style: solid;
+	border-top-color: #4aaaa6;
+    border-top-width: 5px;
+    padding-top:10px;
+	clear:both;
+		}
 }
